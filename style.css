@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f2f2f2;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+.app-container {
+    width: 410px !important;
+    min-width: 410px !important;
+    height: 820px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.app-header h1 {
+    background-color: #008080;
+    padding: 50px 24px 65px 24px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+.metrics-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 16px;
+    margin-top: -35px;
+    z-index: 10;
+}
+.metric-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 14px, 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+}
+.metric-icon {
+    width: 38px;
+    height: 38px;
+    color: #475569;
+    margin-bottom: 8px;
+}
+.metric-icon.urgent {
+    color: #ef4444 !important;
+    stroke: #ef4444 !important;
+}
+.metric-label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #1e293b;
+    line-height: 1.2;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+}
+.metric-value {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    margin-top: auto !important;
+    display: block !important;
+}
+.app-content {
+    flex: 1;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.btn-primary-action {
+    width: 100%;
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 128, 128, 0.25);
+    transition: background-color 0.15s ease;
+}
+.btn-primary-action:hover {
+    background-color: #006663;
+}
+.activity-section h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;    
+}
+.activity-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 0 !important;
+    width: 100%;
+}
+.patient-meta {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+.status-dot {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #888888 !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+}
+.patient-name {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #0f172a;
+}
+.btn-record {
+    background-color: #a37078;
+    color: #ffffff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+.btn-record:hover {
+    background-color: #8e5f66;
+}
