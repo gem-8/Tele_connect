@@ -37,10 +37,12 @@
             </div>
             </section>
             <main class="app-content">
-                <button class="btn-primary-action">+New Specialist Referral</button>
+                <div class="action-control-row">
+                    <button id="btn-new-referral" class="btn-primary-action">+New Specialist Referral</button> 
+                </div>
                 <section class="activity-section">
                     <h2>Recent Activity</h2>
-                    <div class="activity-card">
+                    <div class="activity-list">
                         <div class="activity-item">
                             <div class="patient meta">
                                 <span class="status-dot"></span>
@@ -62,19 +64,16 @@
                         </div>
                         <button class="btn-record">View Records</button>
                     </div>
+                    </div>
                 </section>
-            </div> 
-            <div id="form-view" style="display: none;">
-                <section class="form-screen" style="padding: 20px;">
+            </main>
+            </div> <div id="form-view" style="display: none;">
+                <section class="form-screen">
                     <h2 style="font-size:1.25rem; font-weight:700; margin-bottom: 16px;">Referral Form Fields</h2>
-                    <form id="referral-form" onsubmit="event.preventDefault();">
+                    <form class="referral-form">
                         <div class="input-group">
                             <label for="patient-id">Patient ID:</label>
                             <input type="text" id="patient-id" placeholder="Enter 8-digit ID">
-                        </div>
-                        <div class="input-group">
-                            <label for="reason">Reason:</label>
-                            <input type="text" id="reason" placeholder="Describe symptoms...">
                         </div>
                         <div class="input-group dropdown-group">
                             <label for="urgency">Urgency:</label>
@@ -84,14 +83,19 @@
                                 <option value="urgent">Urgent</option>
                                 <option value="emergency">Emergency</option>
                             </select>
-                        </div>
                             <span class="dropdown arrow">&#9660;</span>
+                        </div>
+                        <div class="upload-section">
+                            <h3>Upload Scans/X-rays</h3>
+                            <div class="drop-zone" id="drag-drop-zone">
+                                <p id="drop-zone-text">Drag & Drop Files</p>
+                            </div>
+                        </div>
                             <div class="form-actions-row">
                                 <button type="button" id="btn-cancel-form" class="btn-secondary">Cancel</button>
                                 <button type="submit" id="btn-submit-form" class="btn-primary">Submit Referral</button>
                             </div>
-                        </div>
-                    </form>
+                        </form>
                 </section>
             </div>
             <div id="success-view" style="display: none;">
@@ -99,7 +103,7 @@
                     <div class="success-icon-badge">&#10003;</div>
                     <h2>Referral Created!</h2>
                     <p>The routing specialist referral form has been filed and sent successfully.</p>
-                    <button id="btn-success-home" class="btn-primary">Back To Home Dashboard</button>
+                    <button type="button" id="btn-success-home" class="btn-primary">Back To Home Dashboard</button>
                 </div>
             </div>
             </main>
