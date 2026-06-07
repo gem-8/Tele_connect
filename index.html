@@ -106,42 +106,7 @@
                     <button type="button" id="btn-success-home" class="btn-primary">Back To Home Dashboard</button>
                 </div>
             </div>
-            </main>
-            <div class="form screen">
-                <header class="form-header">
-                    <h2>Referral Form Fields:</h2>
-                </header>
-                <form class="referral-form" onsubmit="event.preventDefault();">
-                    <div class="input-group">
-                        <label for="patient-id">Patient ID:</label>
-                        <input type="text" id="patient-id" placeholder="Enter 8-digit ID">
-                    </div>
-                    <div class="input-group dropdown-group">
-                        <label for="urgency">Urgency:</label>
-                        <select id="urgency">
-                            <option value="" disabled selected>(Dropdown Select)</option>
-                            <option value="routine">Routine</option>
-                            <option value="urgent">Urgent</option>
-                            <option value="emergency">Emergency</option>
-                        </select>
-                        <span class="dropdown-arrow">&#9660;</span>
-                    </div>
-                    <div class="upload-section">
-                        <h3>Upload Scans/X-rays</h3>
-                        <div class="drop-zone" id="drag-drop-zone">
-                            <div class="&#x27A4;">
-                            <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L13.8 8.2H20.3L15.1 12L16.9 18.2L12 14.3L7.1 18.2L8.9 12L3.7 8.2H10.2L12 2Z" fill="#cccccc"/></svg>
-                        </div>
-                        <p id="drop-zone-text">Drag & Drop Files</p>
-                    </div>
-                    </div>
-                    <div class="form-actions-row">
-                        <button type="button" id="btn-cancel-form" class="btn-secondary">Cancel</button>
-                    <button type="submit" class="btn-submit">Submit</button>
-                    </div>
-                </form>
-            </section>
-            </div>
+        </main>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
             const dashboardView = document.getElementById('dashboard-view');
